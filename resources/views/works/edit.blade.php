@@ -14,7 +14,7 @@
               <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" value="{{ old('name',$work->name) }}" id="name" aria-describedby="nameHelp">
               @error('name')
                 <div class="invalid-feedback">
-                    {{ $message }}
+                    {{ $message  }}
                 </div>
               @enderror
             </div>
