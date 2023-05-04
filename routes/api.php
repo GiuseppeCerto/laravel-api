@@ -21,6 +21,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/works', [WorkController::class, 'index']);
 
+Route::get('/works/{slug}', [WorkController::class, 'show']);
+
 Route::get('/test', function () {
     return response()->json([
         'name' => 'Giuseppe',
